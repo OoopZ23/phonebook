@@ -26,6 +26,8 @@ const persons = [
     }
 ]
 
+app.use(express.static('dist'))
+
 app.use(cors())
 
 app.use((request, response, next) => { request.start=new Date(Date.now()); next(); })
