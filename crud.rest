@@ -1,0 +1,37 @@
+POST http://localhost:3001/api/persons/ HTTP/1.1
+content-type: application/json
+
+{ 
+    "name": "Lex Fridman", 
+    "number": "40-23-0023122"
+}
+
+###
+
+POST http://localhost:3001/api/persons/ HTTP/1.1
+content-type: application/json
+
+{ 
+    "name": "Ada Lovelace", 
+    "number": "39-44-5323523"
+}
+
+###
+
+POST http://localhost:3001/api/persons/ HTTP/1.1
+content-type: application/json
+
+{  
+    "number": "40-23-0023122"
+}
+###
+
+POST http://localhost:3001/api/persons/ HTTP/1.1
+content-type: application/json
+
+{  
+    "name": "Lex Fridman"
+}
+###
+
+DELETE http://localhost:3001/api/persons/8
